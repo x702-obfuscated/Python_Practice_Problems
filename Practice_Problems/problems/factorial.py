@@ -48,14 +48,11 @@ factorial(1)  # Return: 1
 
 # DO NOT EDIT THE CODE BELOW###################
 if __name__ == "__main__":
-    from utils.test_tools import *
-    from tests.test_factorial import * 
+    from utils.test_tools import run_tests
 
     try:
-        tested_function =  factorial
+        run_tests(factorial, __file__)
     except NameError as e:
         print(f"{e}\nDid you name your function correctly?")
         exit()
-    
-    run_tests(tested_function, tests, __file__)
 ###############################################

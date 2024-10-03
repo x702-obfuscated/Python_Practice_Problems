@@ -50,14 +50,13 @@ merge([1, 2, 3], [])         # Returns: [1, 2, 3]
 
 # DO NOT EDIT THE CODE BELOW###################
 if __name__ == "__main__":
-    from utils.test_tools import *
-    from tests.test_merge_sorted_lists import * 
+    from utils.test_tools import run_tests
 
     try:
-        tested_function =  merge
+        run_tests(merge, __file__)
     except NameError as e:
         print(f"{e}\nDid you name your function correctly?")
         exit()
     
-    run_tests(tested_function, tests, __file__)
+    
 ###############################################

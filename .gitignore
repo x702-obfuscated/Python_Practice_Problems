@@ -1,5 +1,10 @@
 keys/
 
+progress.json
+progress_report.txt
+example.py
+test_example.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
