@@ -47,14 +47,13 @@ fibonacci(5)  # Return: 5
 
 # DO NOT EDIT THE CODE BELOW###################
 if __name__ == "__main__":
-    from utils.test_tools import *
-    from tests.test_fibonacci import * 
+    from utils.test_tools import run_tests
 
     try:
-        tested_function =  fibonacci
+        run_tests(fibonacci, __file__)
     except NameError as e:
         print(f"{e}\nDid you name your function correctly?")
         exit()
     
-    run_tests(tested_function, tests, __file__)
+    
 ###############################################
