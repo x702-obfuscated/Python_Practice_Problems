@@ -35,7 +35,7 @@ def run_tests(function, path = None):
 
     try:
         file = os.path.basename(path)
-        module = f"tests.test_{file.removesuffix(".py")}"
+        module = f"tests.test_{file.removesuffix('.py')}"
         tests = importlib.import_module(module).tests
     except ModuleNotFoundError as e:
         print(f"Test File Could Not Be Found.\n{e}")
