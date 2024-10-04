@@ -15,11 +15,13 @@ def test_return(function, expected, *args):
     for arg in args:
         if isinstance(arg,str):
             arg = f"\"{arg}\""
+            arg = repr(arg)[1:-1]
             
         arg_str += f"{arg},"
     
     arg_str = arg_str[:-1]
     
+
     try: 
         assert function(*args) == expected
         print(f"\u2705 PASSED, {str(function.__name__)}({arg_str})")

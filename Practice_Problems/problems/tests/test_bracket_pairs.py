@@ -1,0 +1,18 @@
+tests = [
+    (True, "(a + b) * (c + d)"),                 
+    (True, "((a + b))"),                         
+    (False, "(a + b) * (c + d))"),              
+    (False, "((a + b) * (c + d)"),               
+    (True, "a + b"),                             
+    (True, ""),                                  
+    (False, ")("),                               
+    (True, "(())()"),                           
+    (True, "(()())"),                           
+    (True, "(((a + b)) + (c + d))"),             
+    (False, "((a + b)) + (c + d))"),             
+    (False, "(((a + b) + (c + d)"),               
+    (False, "(((("),                             
+    (False, ")))))"),                           
+    (False, "(((a + b) + c)) + (d + e))"),       
+    (True, "(()(()))"),                          
+]

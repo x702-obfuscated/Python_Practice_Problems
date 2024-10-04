@@ -1,0 +1,21 @@
+tests = [
+    ("hello world", "  Hello, World!  "),           # 
+    ("python39", "   Python@3.9 "),                 
+    ("clean 123", "    CLEAN 123 "),                
+    ("special characters", "Special$$$ Characters!"), 
+    ("spaces  and tabs", "!  Spaces ? and Tabs\t"),  
+    ("notrailing spaces", "No$trailing_spaces!"),   
+    ("", ""),                                       
+    ("all caps", "ALL CAPS"),                       
+    ("", "      "),                       
+    ("abc123", "abc123"),                           
+    ("a b c", " a b c "),                           
+    ("ab123ab", "ab123&*()ab"),                     
+    ("leading spaces", "   leading spaces"),        
+    ("trailing spaces", "trailing spaces    "),     
+    ("mixed case text", "MiXeD CaSe TeXt!"),        
+    ("underscores removed", "underscores_removed"), 
+    ("dashes removed", "dashes-removed"),           
+    ("", "\t\t\n\n"),                               
+    ("singleword", "singleword!@#$%^&*()"),         
+]
