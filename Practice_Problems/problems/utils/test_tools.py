@@ -63,5 +63,5 @@ def run_tests(function, path = None):
         report = read_json()
         report["progress"][file]="\u2705 Passed"
         write_json(data = report)
-
+        update_report()
         print("\u2705 ALL TESTS PASSED \u2705")
