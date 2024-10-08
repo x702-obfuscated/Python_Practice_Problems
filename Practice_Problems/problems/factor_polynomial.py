@@ -1,11 +1,12 @@
 '''
-Write a function factor_polynomial that accepts three integer coefficients a, b, c of a quadratic polynomial
+Write a function factor_polynomial that accepts two integer coefficients b, c of a quadratic polynomial
 in the form:
 
     ax**2 + bx + c
 
 The function should return the factored form of the polynomial as a string <class 'str'>.
 If the polynomial cannot be factored using integer coefficients, return "not factorable"
+It can be assumed that the value of a is = 1
 
 The function should:
     Accept 2 integer arguments representing b and c the coefficients of a quadratic polynomial.
@@ -26,13 +27,10 @@ The function should:
 
 
 Example Calls:
-factor_polynomial(1, -5, 6)   # Returns: "(x - 2)(x - 3)"
-factor_polynomial(1, 2, 1)    # Returns: "(x + 1)(x + 1)"
-factor_polynomial(1, 0, -4)   # Returns: "(x - 2)(x + 2)"
-factor_polynomial(1, 0, 1)    # Returns: "not factorable"
-factor_polynomial(2, -4, 2)   # Returns: "not factorable"
-
-
+factor_polynomial(-5, 6)   # Returns: "(x - 2)(x - 3)"
+factor_polynomial(2, 1)    # Returns: "(x + 1)(x + 1)"
+factor_polynomial(0, -4)   # Returns: "(x - 2)(x + 2)"
+factor_polynomial(0, 1)    # Returns: "not factorable"
 '''
 
 
