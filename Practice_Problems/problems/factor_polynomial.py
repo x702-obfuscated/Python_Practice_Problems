@@ -20,6 +20,8 @@ The function should:
         D == 0 : The quadratic has exactly one real root
         D < 0 : The quadratic equation has no real roots; instead, it has two complex (or imaginary) roots. 
 
+    The first factor should be the positive root of the quadratic formula.
+    The second factor should be the negative root of the quadratic formula. 
 
     Return "not factorable" if the discriminant is negative or if the roots are not integers. 
 
